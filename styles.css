@@ -1,0 +1,128 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 400;
+    color: rgb(251, 255, 0);
+}
+body{
+    margin: 0px;
+    background-color: rgb(16, 34, 136);
+    
+}
+a{
+    text-decoration :none
+}
+a:link{
+    color:#ffffff;
+}
+
+/*a:old*/
+/*a:clicked*/
+/*a:seen{*/
+a:visited{
+    color: #ffffff;
+}
+
+.bodyimg{
+    position: absolute;
+    opacity:0.5;
+}
+.bodyimg:hover{
+    opacity:1
+}
+.bodyimg p{
+    color:#00ffb7;
+    font-size: 55px;
+    font-family: fantasy;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.bodyimg:hover p{
+    color:rgb(255, 72, 0);
+}
+.bodyimg:hover h3{
+    color:cyan;
+}
+.bodyimg h3{
+    color:#1eff00;
+    font-family: fantasy;
+    font-size: 30px;
+    width: 1300px;
+    position: absolute;
+    top:40%;
+    left:70%;
+
+    transform: translate(-40%, -40%);
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    font-family: sans-serif;
+    
+}
+.grid img{
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50px;
+}
+.origami {
+    
+    border-radius: 20px;
+    background-image: url("img1.jpg");
+    padding: 30px;
+    margin: 10px;
+    margin-top: 700px;
+    width:310px;
+    font-family: fantasy;
+    color:yellow;
+    opacity:0.5;
+    
+    
+}
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 0 50px rgba(0, 0, 0, 0);
+    }
+  }
+  
+
+
+.origami:hover{ 
+/*.origami : mouseover{*/
+/*.origami:link{*/
+/*origami:hover{*/
+
+    transform: scale(1.2);
+    opacity:1;
+    animation: pulse-animation 2s infinite;
+}
+
+.origami li{
+    opacity:0;
+}
+
+.origami:hover li{
+    opacity:1;
+}
+
+.origami h3{
+    opacity: 0;
+}
+
+.origami:hover h3{
+    opacity: 1;
+}
+
+
+
+
+
